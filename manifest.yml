@@ -1,0 +1,9 @@
+---
+applications:
+- name: cf-spring-demo-app
+  memory: 1024M
+  instances: 1
+  random-route: true
+  buildpack: sap_java_buildpack
+  env:
+      destinations: '[{name: "ErpQueryEndpoint", url: "https://sapes4.sapdevcenter.com", username: "", password: ""}]'
